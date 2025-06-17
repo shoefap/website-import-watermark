@@ -1,0 +1,26 @@
+# File: pyproject.toml
+# Mô tả: File này cho Replit biết các gói Python cần cài đặt.
+
+[tool.poetry]
+name = "video-watermarker"
+version = "0.1.0"
+description = "A simple web app to add watermarks to videos."
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10"
+Flask = "^3.0.0"
+moviepy = "^1.0.3"
+werkzeug = "^3.0.1"
+Pillow = "^10.0.0" # Thêm Pillow để đảm bảo phiên bản mới
+numpy = "^1.26.0" # Thêm numpy
+proglog = "^0.1.12"
+
+[tool.poetry.group.dev.dependencies]
+debugpy = "^1.6.2"
+replit-python-lsp-server = {extras = ["yapf", "autopep8"], version = "^1.5.9"}
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
